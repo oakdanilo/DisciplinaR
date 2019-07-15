@@ -1,0 +1,6 @@
+PASTAS NECESSÁRIAS PRA SER FEITO UM NOVO PROJETO NO RSTUDIO
+
+/r
+/docs
+/data
+/results
