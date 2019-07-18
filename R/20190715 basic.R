@@ -37,13 +37,13 @@ fac<-sample(l3, 10, replace=TRUE)
 df<-data.frame(x=1, y=1:10, fac=fac)
 df
 
+
 #importar .csv
 tab<-read.csv("./data/exercicio_01.csv", sep =  ",")
-str(tab)
-head(tab)
 
 #NÃO LER
 #df2$comp <-gsub(",",".", df2$comp) substituindo as virgulas pelo .
 #df2$comp<-as.numeric(df2$comp)
 
 #write.csv(df, ./data/meusdados.csv")
+
