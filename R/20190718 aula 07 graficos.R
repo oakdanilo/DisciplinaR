@@ -35,7 +35,7 @@ abline(a=coefm[1], b=coefm[2],
 
 install.packages("png", dependencies=TRUE)
 library(png)
-png("figs/fig01.png", res=300, width=2400, height=1200) #lendo a figura
+png("figs/fig01.png", res=300, width=2400, height=1200) #definindo um dispositivo gráfico numa pasta
 
 par(mfrow=c(1,2), las=1, bty="l") #setando o layout de leitura do graph
 plot(salario ~ experiencia, data=sal[sal$sexo=="H",], #plotando
@@ -89,6 +89,7 @@ axis(1, at=1:3, labels=sp, font=3)
 par(mfrow=c(1,1))
 
 set.seed(42) #criando o mesmo grupo aleatório
+
 d2 <- data.frame(name=letters[1:5], #criando o df relacionado ao seedset42
                  value=sample(seq(4,15),5),
                  sd=c(1,0.2,3,2,4))
@@ -101,3 +102,13 @@ arrows(x0=1:5,
 set.seed(13)
 sample(1:10,5)
 RNGkind()
+
+ap<-range(iris$Sepal.Width)
+ap2<-range(iris$Petal.Length)
+#exercícios
+data(iris)
+colnames(iris)
+
+dev.off()
+
+
